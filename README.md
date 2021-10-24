@@ -7,7 +7,7 @@ I have done a lot of scripting in TouchOSC to take care of this and have the enc
 The BCF2000 encoders are set to relative 2 mode for the appropriate control channel.
 I also did some scripting to use some encoders as channel and group select, as well as use the buttons above each fader as they are on the iniversal fader wing from ETC, where the bottom one is fire, the top is stop/back, and pressing both is load.
 For the faders, there is also some scripting done to make them behave nicely, as Eos' sends the fader level after it is steady at a level for a bit, which is nice to keep the two in sync, but if you fade up and right back down, then it can fight you a bit, so there I wrote a handler to not send the MIDI to the BCF2000 if they are already in sync, only if they are out of sync.
-Some of the buttons are set for paging the fader bank, as well as moving between fixtures.
+Some of the buttons are set for paging the fader bank, as well as a coarse/fine toggle for encoders, and a select last button.
 All this is labeled in the TouchOSC document, as are each of the parameters for all of the encoders.
 
 I have two presets programmed in my BCF2000, one that has most of the parameters for the movers in my theatre, and one for the static LED lights. These parameters can easily be changed in TouchOSC to be whatever you need.
